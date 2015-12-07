@@ -1,0 +1,46 @@
+{
+  "size": [{
+    "option": "S",
+    "price": 9.99
+  }, {
+    "option": "M",
+    "price": 9.99
+  }, {
+    "option": "C",
+    "price": 9.99
+  }],
+  "material": [{
+    "option": "Cotton",
+    "price": 0.00
+  }, {
+    "option": "Polyester",
+    "price": 3.99
+  }, {
+    "option": "Silk",
+    "price": 7.99
+  }],
+  "colour": [{
+    "option": "Red"
+  }, {
+    "option": "Yellow"
+  }, {
+    "option": "Purple"
+  }],
+  "pattern": [{
+    "option": "Spots"
+  }, {
+    "option": "Stripes"
+  }, {
+    "option": "Stars"
+  }],
+  "extras": [{
+    "option": "Giftbox",
+    "price": 2.99
+  }, {
+    "option": "Matching Tie",
+    "price": 14.99
+  }, {
+    "option": "Cufflinks",
+    "price": 8.99
+  }]
+}

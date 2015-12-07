@@ -6,27 +6,82 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
+  <title>Fancy Pants</title>
+  <meta name="description" content="When pants Pants just won't do">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+  <link rel="stylesheet" media="all" href="css/application.css">
+  <link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+<header class="padding">
+    <h1 class="logo">Fancy Pants Co</h1>
+  </header>
 
-  <div ng-view></div>
+  <main>
+    <div class="container">
+      <aside>
+        <ul class="progress">
+          <li>
+            <a href="#/step-1" class="step step-1 is-active">
+              <div class="step-number">1</div>
+              <h3 class="step-heading">Size</h3>
+              <span class="step-value">-</span>
+            </a>
+          </li>
+          <li>
+            <a href="#/step-2" class="step step-2 is-active">
+              <div class="step-number">2</div>
+              <h3 class="step-heading">Material</h3>
+              <span class="step-value">-</span>
+            </a>
+          </li>
+          <li>
+            <a href="#step-3" class="step step-3 is-active">
+              <div class="step-number">3</div>
+              <h3 class="step-heading">Colour</h3>
+              <span class="step-value">-</span>
+            </a>
+          </li>
+          <li>
+            <a href="#step-4" class="step step-4">
+              <div class="step-number">4</div>
+              <h3 class="step-heading">Pattern</h3>
+              <span class="step-value">-</span>
+            </a>
+          </li>
+          <li>
+            <a href="#step-5" class="step step-5">
+              <div class="step-number">4</div>
+              <h3 class="step-heading">Optional Extras</h3>
+              <span class="step-value">-</span>
+            </a>
+          </li>
+          <li>
+            <a href="#total-cost" class="step step-total-cost">
+              <h3 class="step-total-cost-heading">Total Cost</h3>
+              <div class="step-total-cost-value">&pound;{{ctrl.totalCost |
+                number:2}}</div>
+            </a>
+          </li>
+        </ul>
+      </aside>
 
-  <div>Angular seed app: v<span app-version></span></div>
+      <section>
+
+        <div ng-view></div>
+
+
+      </section>
+    </div>
+  </main>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
