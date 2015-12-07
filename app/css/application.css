@@ -466,7 +466,7 @@ header {
     padding-left: 30px;
     padding-right: 30px;
     /* background-color: crimson */
-    background: linear-gradient(#fb3 30%, #58a 0);
+    background: linear-gradient(#fb3 35%, #58a 0);
     background-size: 100% 30%;
 }
 
