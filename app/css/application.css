@@ -307,7 +307,7 @@ h2 {
     line-height: 50px;
     text-align: center;
     text-decoration: none;
-    background-color: crimson;
+    background-color: #58a;
     border: solid 4px #fff;
     border-radius: 100%;
     color: #fff
@@ -350,7 +350,7 @@ h2 {
 .step-total-cost {
     padding-left: 10px;
     text-align: center;
-    background-color: crimson;
+    background-color: #58a;
     border: none;
     color: #fff
 }
@@ -465,7 +465,9 @@ header {
     height: 60px;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: crimson
+    /* background-color: crimson */
+    background: linear-gradient(#fb3 30%, #58a 0);
+    background-size: 100% 30%;
 }
 
 header .logo {

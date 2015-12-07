@@ -1,12 +1,12 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+var app = angular.module('fancyPants', [
   'ngRoute',
-  'myApp.view1',
+  'app.size',
   'myApp.view2',
-  'myApp.version'
+  'app.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/size'});
 }]);
