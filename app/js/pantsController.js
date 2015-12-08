@@ -3,6 +3,7 @@ app.controller('pantsController', ['optionList', function(optionList) {
 
   var self = this;
 
+
   self.getOptions = function() {
     optionFactory
       .success(function (ops) {
@@ -13,6 +14,5 @@ app.controller('pantsController', ['optionList', function(optionList) {
       });
 console.log("Hi");
     };
-
 
 }]);

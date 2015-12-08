@@ -501,7 +501,10 @@ body {
 }
 
 main {
-    padding: 30px
+    padding: 30px;
+    /* background: red; */
+    background: linear-gradient(#fb3 50%, #58a 50%);
+    background-size: 100% 10px;
 }
 
 main>.container {
@@ -519,4 +522,12 @@ section {
     margin-left: 280px;
     padding-left: 20px;
     border-left: solid 2px #e5e5e5
+    /* border-left: solid 2px #e5e5e5; */
+  }
+
+  .grape {
+    fill: purple;
+  }
+  svg {
+    width: 50%;
   }
